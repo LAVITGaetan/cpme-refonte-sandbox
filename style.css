@@ -28,6 +28,28 @@
 
 /* Titles */
 
+.title-landing {
+    margin: 5em auto 2.5em auto;
+    width: 60%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--colorMain);
+}
+
+.title-beautify {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--colorCTA);
+}
+
 .title-main {
     margin: 2em 10% 1.5em 10%;
     position: relative;
@@ -58,8 +80,41 @@
 
 .container-flex {
     width: 100%;
-    height: auto;
+    height: auto;   
     padding: 0 5% 5em 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-social {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0em auto 8em auto;
+}
+
+.container-landing {
+    display: flex;
+    margin: 5em 0 0 0;
+}
+
+.container-landing_left {
+    width: 40%;
+    height: fit-content;
+    padding-bottom: 1em;
+background-color: var(--colorLight);
+margin-left: 10%;
+}
+
+.container-landing_right {
+    width: 40%;
+    height: fit-content;
+padding: 2em 0 1em 0
+}
+
+.container-news {
+    margin: 0em 50px 0em 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -68,6 +123,71 @@
 /* /Containers */
 
 /*  Cards */
+
+.card-news {
+    background-color: #ffffff;
+    width: 300px;
+    height: auto;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+}
+
+.card-news_image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.card-news_title {
+    width: 85%;
+    margin: 1em auto;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--colorMain);
+}
+
+.card-news_text {
+    font-family: 'Nunito';
+    width: 85%;
+    margin: 1em auto ;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    color: var(--colorDark);
+    margin-bottom: 1.5em;
+}
+
+.card-news_group {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: start;
+}
+
+.card-news_action {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    color: #00ADB9;
+    width: fit-content;
+    margin: 0 10px 0 10%;
+}
+
+.card-news_icon {
+    width: 32px;
+    height: 32px;
+}
 
 .card-perso {
     width: 300px;
@@ -215,7 +335,8 @@
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 20px;
-    margin: 1em 25px;
+    margin: 1em 25px;        
+    cursor: pointer;
 }
 
 .card-aboutUs {
@@ -283,9 +404,17 @@
     margin: 1.5em auto;
 }
 
+.card-adherent_subrow {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5em auto;
+}
+
 .card-adherent_icon {
     width: 32px;
     height: 32px;
+    border-radius: 4px;
 }
 
 .card-adherent_text {
@@ -297,6 +426,14 @@
     margin-left: 15px;
 }
 
+.card-adherent_subtext {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--colorDark);
+}
+
 .card-adherent_label {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -304,15 +441,22 @@
     color: var(--colorMain);
 }
 
+.card-adherent_dropdown {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 1em auto;
+}
+
 .separator-horizontal {
     width: 90%;
-    margin: 2em auto;
-    height: 5px;
+    margin: 1em auto;
+    height: 10px;
     background-color: var(--colorLight);
 }
 
-.card-adherent_dropdown {
-    display: none;
+.card-adherent_dropped {
+    /*display: none;*/
 }
 /* /Cards */
 
@@ -376,22 +520,6 @@
     font-weight: 100;
 }
 
-.form-button  {
-    font-family: Nunito;
-    background-color: var(--colorCTA);
-    padding: 12px 24px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 2em auto;
-    display: block;
-    font-size: 16px;
-    letter-spacing: .1em;
-    cursor: pointer;
-}
-
 .form-forget {
     padding-top: 1em;
     font-family: 'Nunito';
@@ -413,11 +541,133 @@
 
 /* /Forms */
 
+/* CTA */
+
+.button-form  {
+    font-family: Nunito;
+    background-color: var(--colorCTA);
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 2em auto;
+    display: block;
+    font-size: 16px;
+    letter-spacing: .1em;
+    cursor: pointer;
+}
+
+.button-social {
+    min-width: 150px;
+    border-bottom: 2px solid var(--colorCTALight);
+    height: 48px;
+    width: fit-content;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: var(--colorDark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-landing {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    height: 60px;
+    background: var(--colorCTA);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2em;
+    width: fit-content;
+    margin: 0 0 2em 10%;
+    cursor: pointer;
+}
+
+.button-landing_icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 1em;
+}
+
+/* /CTA */
+
+/* Texts */
+
+.text-landing {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%; 
+    letter-spacing: 0.05em;
+    margin: 0 10% 2em 10%;
+    padding: 0 0 .5em .5em;
+    color: var(--colorDark);
+}
+
+.text-landing_beautify {
+    color: var(--colorCTA);
+    font-weight: bold;
+}
+
+/* /Texts /*
+
+/* Design elements */
+
+.landing-row {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    color: var(--colorDark);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em 10%;
+    width: fit-content;
+}
+
+.landing-row_figure {
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-row_icon {
+    width: 14px;
+    height: 14px;
+}
+
 /* Responsive mobile */
 
 @media screen and (max-width:425px) {
 
-    /* Titles */
+    /* Titles mobile */
 
     .title-main {
         margin: 1em 10% .7em 10%;
@@ -425,9 +675,9 @@
         font-size: 20px;
     }
 
-    /* /Titles */
+    /* /Titles mobile */
 
-    /* Cards */
+    /* Cards mobile */
 
     .card-dossier {
         margin: .7em auto;
@@ -449,5 +699,5 @@
         border-radius: 10px;
     }
 
-    /* /Cards */
+    /* /Cards mobile */
 }
