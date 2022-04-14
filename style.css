@@ -87,6 +87,12 @@
     flex-wrap: wrap;
 }
 
+.container-profil {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .container-social {
     width: 60%;
     display: flex;
@@ -100,15 +106,15 @@
 }
 
 .container-landing_left {
-    width: 40%;
+    width: 45%;
     height: fit-content;
     padding-bottom: 1em;
 background-color: var(--colorLight);
-margin-left: 10%;
+margin-left: 5%;
 }
 
 .container-landing_right {
-    width: 40%;
+    width: 45%;
     height: fit-content;
 padding: 2em 0 1em 0
 }
@@ -123,6 +129,28 @@ padding: 2em 0 1em 0
 /* /Containers */
 
 /*  Cards */
+
+.card-profil {
+    margin:  4em auto;
+    width: 360px;
+    padding: 1.2em;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border-top: 4px solid var(--colorMain);
+}
+
+.card-profil_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--colorDark);
+}
 
 .card-news {
     background-color: #ffffff;
@@ -584,7 +612,7 @@ padding: 2em 0 1em 0
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 170%;
     letter-spacing: 0.05em;
     color: #FFFFFF;
@@ -626,6 +654,11 @@ padding: 2em 0 1em 0
     font-weight: bold;
 }
 
+.text-beautify {
+    font-weight: bold;
+    color: var(--colorCTA);
+}
+
 /* /Texts /*
 
 /* Design elements */
@@ -661,7 +694,10 @@ padding: 2em 0 1em 0
 .landing-row_icon {
     width: 14px;
     height: 14px;
+    margin-top: 2px;
 }
+
+/* /Design elements */
 
 /* Responsive mobile */
 
