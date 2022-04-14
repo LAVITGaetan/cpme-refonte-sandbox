@@ -1,0 +1,453 @@
+/* Global Settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+    --colorMain: #114d61;
+    --colorCTA: #00adb9;
+    --colorCTALight: #00adb930;
+    --colorDark: #2B393E;
+    --colorLight: #f1f4f8;
+}
+
+/* /Global Settings */
+
+/* Titles */
+
+.title-main {
+    margin: 2em 10% 1.5em 10%;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    color: var(--colorMain);
+    padding: 1em .5em .5em .5em;
+}
+
+.title-main::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    width: 80px;
+    height: 6px;
+    background-color: var(--colorCTALight);
+}
+
+/* /Titles */
+
+/* Containers */
+
+.container-flex {
+    width: 100%;
+    height: auto;
+    padding: 0 5% 5em 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* /Containers */
+
+/*  Cards */
+
+.card-perso {
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    margin: 2em 25px;
+    position: relative;
+    border-radius: 2px;
+    padding-bottom: 1em;
+    border-top: 5px solid var(--colorCTA);
+    cursor: pointer;
+}
+
+.card-perso:hover > .card-perso::before {
+    height: 200px;
+}
+
+.card-perso::before {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: #f1f4f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0%, 100% 29%, 0 100%);
+}
+
+.card-perso_block {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    margin: 2em auto 1em auto;
+    background-color: var(--colorMain);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.card-perso_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.card-perso_title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--colorMain);
+    margin: 1em auto;
+    width: 90%;
+}
+
+.card-perso_text {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: center;
+    color: #2B393E;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.card-team {
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin: 2em 25px;
+    position: relative;
+}
+
+.card-team::before {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorCTA);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-image: url(/assets/team-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid #114d61;
+}
+
+.card-team_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: block;
+    margin: 60px auto 25px auto;
+    position: relative;
+    z-index: 100;
+    box-shadow: 5px 5px 10px 0 #114d6150;
+}
+
+.card-team_title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--colorMain);
+    padding-bottom: .6em;
+    text-align: center;
+}
+
+.card-team_subtitle {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--colorCTA);
+}
+
+.card-team_action {
+    width: 32px;
+    height: 32px;
+    background-color: var(--colorCTA);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.card-dossier {
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 1em 25px;
+}
+
+.card-aboutUs {
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 1em 25px;
+    border-top: 4px solid var(--colorCTA);
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1em;
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--colorMain);
+    padding-bottom: 1em;
+}
+
+.card-text {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 170%;
+    color: var(--colorDark);
+}
+
+.card-adherent {
+    width: 500px;
+    height: auto;
+    padding-bottom: 1em;
+    margin: 4em auto;
+    border-radius: 2px;
+    box-shadow: 0px 10px 10px 2px #0000001A;
+}
+
+.card-adherent_title {
+    background-color: var(--colorMain);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: .7em;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-bottom: 1.4em;
+}
+
+.card-adherent_row {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5em auto;
+}
+
+.card-adherent_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.card-adherent_text {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--colorDark);
+    margin-left: 15px;
+}
+
+.card-adherent_label {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--colorMain);
+}
+
+.separator-horizontal {
+    width: 90%;
+    margin: 2em auto;
+    height: 5px;
+    background-color: var(--colorLight);
+}
+
+.card-adherent_dropdown {
+    display: none;
+}
+/* /Cards */
+
+/* Forms */
+
+.form-login {
+    width: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    margin: 100px auto;
+    padding-bottom: 1.5em;
+}
+
+.form-title {
+    color: #fff;
+    width: 100%;
+    background-color: var(--colorMain);
+    padding: 1em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-bottom: 2em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.form-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 0.05em;
+    color: #2B393E;
+    margin-bottom: 1em;
+}
+
+.form-input {
+    background-color: var(--colorLight);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+}
+
+::placeholder {
+    font-family: Nunito;
+    font-size: 15px;
+    color: var(--colorDark);
+    font-weight: 100;
+}
+
+.form-button  {
+    font-family: Nunito;
+    background-color: var(--colorCTA);
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 2em auto;
+    display: block;
+    font-size: 16px;
+    letter-spacing: .1em;
+    cursor: pointer;
+}
+
+.form-forget {
+    padding-top: 1em;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--colorDark);
+    border-top: 2px solid var(--colorLight);
+}
+
+.form-link {
+    font-weight: bold;
+    color: var(--colorCTA);
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* /Forms */
+
+/* Responsive mobile */
+
+@media screen and (max-width:425px) {
+
+    /* Titles */
+
+    .title-main {
+        margin: 1em 10% .7em 10%;
+        padding: 1em .5em .5em .5em;
+        font-size: 20px;
+    }
+
+    /* /Titles */
+
+    /* Cards */
+
+    .card-dossier {
+        margin: .7em auto;
+        padding: 15px;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .card-aboutUs {
+        margin: .7em auto;
+        padding: 15px;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .card-perso  {
+        width: 95%;
+        margin: .7em auto;
+        border-radius: 10px;
+    }
+
+    /* /Cards */
+}
