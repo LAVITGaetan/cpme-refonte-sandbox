@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container-admin {
+            width: 100%;
+            height: auto;
+            padding: 2em 5% 2em 5%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card-admin {
+            width: 300px;
+            height: auto;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border-top: 5px solid var(--colorMain);
+            box-shadow: 5px 10px 25px 0px #0000001A;
+            margin: 200px auto;
+            position: relative;
+            padding: 1.5em 1em 50px 1em;
+            margin: 1em 10px 2em 10px;
+        }
+
+        .card-admin_action {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 5px;
+            width: 32px;
+            height: 32px;
+            border: 2px solid var(--colorCTA);
+            cursor: pointer;
+        }
+
+        .card-admin_recto {
+            width: 100%;
+            text-align: center;
+            height: auto;
+        }
+
+        .card-admin_photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+        }
+
+        .card-admin_name {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 170%;
+            letter-spacing: 0.05em;
+            color: var(--colorMain);
+            margin: 1em auto 0 auto;
+        }
+
+        .card-admin_label {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            text-align: center;
+            font-size: 18px;
+            line-height: 170%;
+            letter-spacing: 0.05em;
+            color: var(--colorMain);
+            margin: 0 0 .5em 0;
+        }
+
+        .card-admin_list {
+            font-family: 'Nunito';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 150%;
+            color: var(--colorDark);
+            list-style-type: none;
+        }
+
+        .card-admin_action {
+            background-color: #f1f4f8;
+        }
+
+        .card-admin_role {
+            font-family: 'Nunito';
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 170%;
+            letter-spacing: 0.05em;
+            color: var(--colorCTA);
+            margin: 0 0 0 0;
+        }
+
+        .card-admin_verso {
+            width: 100%;
+            max-height: 300px;
+        }
+
+        #admin-verso0,
+        #admin-verso1,
+        #admin-verso2,
+        #admin-verso3,
+        #admin-verso4,
+        #admin-verso5,
+        #admin-verso6 {
+            display: none;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="body-background_half"></div>
+    <h1 class="title-main">Le conseil d'administration</h1>
+    <p class="title-sub">Engagés à tous les niveaux de l'organisation, les membres de notre Conseil d'Administration
+        représentent les intérêts de la CPME Réunion et a fortiori ceux des entreprises locales.</p>
+
+    <h2 class="title-partners">Le Bureau</h2>
+    <div class="container-admin">
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(0)" id="admin-cta0">
+            <div class="card-admin_recto" id="admin-recto0">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Gérard LEBON</h3>
+                <p class="card-admin_role">Président</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso0">
+                <h3 class="card-admin_label">Entreprises</h3>
+                <ul>
+                    <li class="card-admin_list">M2GL</li>
+                    <li class="card-admin_list">LES FOURMIS</li>
+                    <li class="card-admin_list">LA CROIX</li>
+                    <li class="card-admin_list">L2D (SCI)</li>
+                    <li class="card-admin_list">DISTRIPROCOM</li>
+                    <li class="card-admin_list">STATION SERVICES TROIS CHEMINS</li>
+                    <li class="card-admin_list">STATION SERVICE LE GUILLAUME</li>
+                    <li class="card-admin_list">PRO AUTO SARL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(1)" id="admin-cta1">
+            <div class="card-admin_recto" id="admin-recto1">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Philippe HO-YEN</h3>
+                <p class="card-admin_role">Trésorier</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso1">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">PLURI EXPERTS
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(2)" id="admin-cta2">
+            <div class="card-admin_recto" id="admin-recto2">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Jean-François TARDIF</h3>
+                <p class="card-admin_role">Secrétaire Général</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso2">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">ABSYS ORGANISATION CONSEIL
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(3)" id="admin-cta3">
+            <div class="card-admin_recto" id="admin-recto3">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Cédric DALY</h3>
+                <p class="card-admin_role">VP Artisanat</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso3">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">TI ROULE
+                    </li>
+                    <li class="card-admin_list">TRADITION 974
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(4)" id="admin-cta4">
+            <div class="card-admin_recto" id="admin-recto4">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Pascal PLANTE</h3>
+                <p class="card-admin_role">VP Commerce</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso4">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">STRATEGIS CONSULTANT SARL
+                    </li>
+                    <li class="card-admin_list">BIOTEK</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(5)" id="admin-cta5">
+            <div class="card-admin_recto" id="admin-recto5">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Eric BUFFI</h3>
+                <p class="card-admin_role">VP Industrie / BTP</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso5">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">SCI ART</li>
+                    <li class="card-admin_list">SCI BEE</li>
+                    <li class="card-admin_list">REUNIONNAISE AMENAGEMENT URBAIN</li>
+                    <li class="card-admin_list">ARTEL </li>
+                    <li class="card-admin_list">BUFFI SATP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(6)" id="admin-cta6">
+            <div class="card-admin_recto" id="admin-recto6">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Mohammed ISMAEL-JINA</h3>
+                <p class="card-admin_role">VP Services</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso6">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">ABSYS ORGANISATION CONSEIL
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title-partners">Section Artisanat</h2>
+    <div class="container-admin">
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(3)" id="admin-cta3">
+            <div class="card-admin_recto" id="admin-recto3">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Cédric DALY</h3>
+                <p class="card-admin_role">VP Artisanat</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso3">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">TI ROULE
+                    </li>
+                    <li class="card-admin_list">TRADITION 974
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title-partners">Section Commerce</h2>
+    <div class="container-admin">
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(4)" id="admin-cta4">
+            <div class="card-admin_recto" id="admin-recto4">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Pascal PLANTE</h3>
+                <p class="card-admin_role">VP Commerce</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso4">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">STRATEGIS CONSULTANT SARL
+                    </li>
+                    <li class="card-admin_list">BIOTEK</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title-partners">Section Industrie / BTP</h2>
+    <div class="container-admin">
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(5)" id="admin-cta5">
+            <div class="card-admin_recto" id="admin-recto5">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Eric BUFFI</h3>
+                <p class="card-admin_role">VP Industrie / BTP</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso5">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">SCI ART</li>
+                    <li class="card-admin_list">SCI BEE</li>
+                    <li class="card-admin_list">REUNIONNAISE AMENAGEMENT URBAIN</li>
+                    <li class="card-admin_list">ARTEL </li>
+                    <li class="card-admin_list">BUFFI SATP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title-partners">Section Services</h2>
+    <div class="container-admin">
+        <div class="card-admin">
+            <img src="https://lavit-gaetan.com/wp-content/uploads/2022/04/arrow-right-4.png" alt="retourner la carte"
+                class="card-admin_action" onclick="returnCard(6)" id="admin-cta6">
+            <div class="card-admin_recto" id="admin-recto6">
+                <img src="https://lavit-gaetan.com/wp-content/uploads/2022/01/20220120_105518-scaled-e1642662005570.jpg"
+                    alt="" class="card-admin_photo">
+                <h3 class="card-admin_name">Mohammed ISMAEL-JINA</h3>
+                <p class="card-admin_role">VP Services</p>
+            </div>
+            <div class="card-admin_verso" id="admin-verso6">
+                <h3 class="card-admin_label">Entreprise</h3>
+                <ul>
+                    <li class="card-admin_list">ABSYS ORGANISATION CONSEIL
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function returnCard(num) {
+            let cta = document.getElementById('admin-cta' + num);
+            let recto = document.getElementById('admin-recto' + num);
+            let verso = document.getElementById('admin-verso' + num);
+            if (cta.style.transform === "rotate(180deg)") {
+                cta.style.transform = "rotate(0deg)";
+                verso.style.display = "none";
+                recto.style.display = "block";
+            }
+            else {
+                cta.style.transform = "rotate(180deg)";
+                verso.style.display = "block";
+                recto.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<div class="login-container">
+<h1 class="login-title">Espace adhérent</h1>
+<img src="https://lavit-gaetan.com/wp-content/uploads/2022/03/login-4.png" alt="icone de connexion" class="login-icon">
+<form class="post-form" method="post">
+<input required="" class="login-input" id="identifiant" type="text" placeholder="Identifiant" name="email">
+<input required="" class="login-input" id="mot-de-passe" type="password" placeholder="Mot de passe" name="code">
+<button class="login-button" name="submit-query">Se connecter</button>
+<p class="login-forget">Mot de passe oublié ? <span class="forget-link">Cliquez ici</span></p>
+</form>
+</div>
+<div class="news-container">
+<div class="news-left_container">
+<div class="news-left_card">
+<div class="news-card_category">Actualités</div>
+<div class="news-card_image" style="background-image: url(https://cpmereunion.re/thumb/source/jpeg/0038510001648039649/w1000-h600-q95-cc/ensemble2022.jpg);">
+</div>
+<h2 class="news-card_title">Présentation des candidats de la liste " Ensemble pour nos Entreprises"</h2>
+<p class="news-card_text">
+Entre le 4 et le 17 mai prochain, les chefs d'entreprises réunionnais sont de nouveau appelés à élire leurs représentants à la Chambre de commerce et d'industrie (CCI) pour un nouveau mandat d'un peu moins de cinq ans.</p>
+<div class="news-card_footer">
+<span class="card-footer_text">Voir l'article</span>
+<img src="https://lavit-gaetan.com/wp-content/uploads/2022/03/right-arrow-1.png" alt="" class="card-footer_icon">
+</div>
+</div>
+<div class="news-left_card">
+<div class="news-card_category">Inclusion</div>
+<div class="news-card_image" style="background-image: url(https://cpmereunion.re/thumb/source/jpg/0477625001642752274/w1000-h600-q95-cc/logo-boussole.jpg);">
+</div>
+<h2 class="news-card_title">Le contrat boussole, tremplin vers l’emploi</h2>
+<p class="news-card_text">
+La CPME Réunion s' engage pour l' inclusion et mobilise notamment un réseau d' employeurs solidaires qui agit pour une insertion sociale et professionnelle durable des personnes fragilisées en associant travail, formation, accompagnement, et suivi.</p>
+<div class="news-card_footer">
+<span class="card-footer_text">Voir l'article</span>
+<img src="https://lavit-gaetan.com/wp-content/uploads/2022/03/right-arrow-1.png" alt="" class="card-footer_icon">
+</div>
+</div>
+<div class="news-left_card">
+<div class="news-card_category">Inclusion</div>
+<div class="news-card_image" style="background-image: url(https://lavit-gaetan.com/wp-content/uploads/2022/03/trophee-entreprise-territoire-2-2.jpg);">
+</div>
+<h2 class="news-card_title">Découvrez les 14 entreprises retenues pour concourir à la 5ème édition du "Trophée Entreprise &amp; Territoire"</h2>
+<p class="news-card_text">
+Les membres du jury se sont réunis pour sélectionner les candidats à la 5ème édition du Trophée Entreprise &amp; Territoire. Étaient présents lors du comité de pilotage : CPME Réunion, Antenne Réunion, Groupama, Urcoopa, ZEOP, Air France, Région Réunion &amp; IAE Réunion.</p>
+<div class="news-card_footer">
+<span class="card-footer_text">Voir l'article</span>
+<img src="https://lavit-gaetan.com/wp-content/uploads/2022/03/right-arrow-1.png" alt="" class="card-footer_icon">
+</div>
+</div>
+</div>
+</div>
